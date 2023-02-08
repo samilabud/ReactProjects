@@ -1,0 +1,52 @@
+
+.App-top-menu {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+.App-link {
+  color: #61dafb;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.App-link a{
+  color: #61dafb;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-link:hover {
+    animation: App-link-spin 1 1s linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes App-link-spin {
+  from {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  to {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+}
+
+.is-active {
+  text-decoration: underline;
+  font-size: 12px;
+  color: azure;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+}
