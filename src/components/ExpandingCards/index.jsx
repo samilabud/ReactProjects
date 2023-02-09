@@ -1,4 +1,6 @@
-import React from 'react';
-import './expanding.css';
+import React from "react";
+import "./expanding.css";
 
-export default () => <div>Test</div>;
+const ExpandingCard = () => <div>Test</div>;
+
+export default ExpandingCard;
