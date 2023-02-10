@@ -1,0 +1,68 @@
+h2 {
+  margin-left: 10px;
+}
+.cardContainer {
+  display: flex;
+  width: 90vw;
+  align-self: center;
+}
+
+.card {
+  background-size: cover;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
+}
+
+.card.active {
+  flex: 5;
+}
+
+.card h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.cabareteRD {
+  background-image: url("../../images/expanding-cards/dominican-republic-attractions-cabarete-beaches-east.jpg");
+}
+
+.bahiaDeLasAguilasRD {
+  background-image: url("../../images/expanding-cards/dominican-republic-attractions-places-to-visit-bahia-de-las-aguilas.jpg");
+}
+
+.laRomanaRD {
+  background-image: url("../../images/expanding-cards/dominican-republic-attractions-places-to-visit-la-romana.jpg");
+}
+
+.lasTerrenasRD {
+  background-image: url("../../images/expanding-cards/dominican-republic-attractions-places-to-visit-las-terrenas.jpg");
+}
+
+.samanaRD {
+  background-image: url("../../images/expanding-cards/dominican-republic-attractions-places-to-visit-samana-bay-whale-watching.jpg");
+}
