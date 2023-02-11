@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import ExpandingCards from "./components/ExpandingCards";
+import BlurryLoading from "./components/BlurryLoading";
 import logoRight from "./images/main/logo-right.svg";
 import "./App.css";
 import "animate.css";
 
 function App() {
   return (
-    <div>
+    <div id="container">
       <Router>
         <div className="App-top-menu">
           <ul>
@@ -37,6 +38,16 @@ function App() {
                 Expanding Cards
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/blurry-loading"
+                className={({ isActive }) =>
+                  isActive ? "is-active" : "App-link"
+                }
+              >
+                Blurry Loading
+              </NavLink>
+            </li>
           </ul>
           <div className="logo-container">
             <img src={logoRight} className="img-logo" alt="logo" />
@@ -48,6 +59,11 @@ function App() {
             exact
             path="/expanding-cards"
             element={<ExpandingCards />}
+          ></Route>
+          <Route
+            exact
+            path="/blurry-loading"
+            element={<BlurryLoading />}
           ></Route>
         </Routes>
       </Router>
