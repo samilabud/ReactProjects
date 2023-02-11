@@ -3,7 +3,6 @@ h2 {
 }
 .cardContainer {
   display: flex;
-  width: 90vw;
   align-self: center;
 }
 
