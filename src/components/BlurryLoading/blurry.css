@@ -1,11 +1,11 @@
-body {
+#blurryContainer {
   overflow: hidden;
 }
 #blurryContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 88.9vh;
 }
 .blurryBG {
   background: url("../../images/blurry-loading/best-dominican-republic-beach.jpg")

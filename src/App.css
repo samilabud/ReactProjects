@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+body {
+  font-family: "Lora", serif;
+}
+
 .App-top-menu {
   background-color: #282c34;
   display: flex;
